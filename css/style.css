@@ -1,0 +1,261 @@
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+/* start test-speed */
+.test-speed {
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+  background-image: url("../images/stats.jpg");
+  background-position: center center;
+  background-repeat:no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.test-speed::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+.test-speed h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .test-speed h1 {
+    font-size: 40px;
+  }
+}
+
+.test-speed .container {
+  /* position: relative; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.test-speed .container .form-select {
+  width: 30%;
+  display: block;
+  margin: 0 auto 30px auto;
+  font-size: 24px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  cursor: pointer;
+  color: #04544c;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .test-speed .container .form-select {
+    width: 70%;
+  }
+}
+.test-speed .container .begin {
+  margin: 0 auto 30px auto;
+  width: 40%;
+  color: white;
+  height: 65px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  transition: 1s;
+  animation: anmibutton 1.5s infinite linear alternate;
+  -webkit-animation: anmibutton 1.5s infinite linear alternate;
+  -webkit-transition: 1s;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .test-speed .container .begin {
+    width: 80%;
+  }
+}
+.test-speed .container .words {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 auto 30px auto;
+  width: 70%;
+  user-select: none;
+  color: #b1e7ee;
+}
+@media (max-width: 767px) {
+  .test-speed .container .words {
+    font-size: 25px;
+  }
+}
+.test-speed .container .begin:hover {
+  background-color: #04544c;
+}
+.test-speed .container .form-control {
+  margin: 0 auto 30px auto;
+  width: 70%;
+  display: block;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  caret-color: #04544c;
+  text-align: center;
+  color: #04544c;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .test-speed .container .form-control {
+    width: 100%;
+  }
+}
+.test-speed .container .button-again {
+  margin: 0 auto 40px auto;
+  color: white;
+  width: 25%;
+  display: block;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  transition: 1s;
+  animation: anmibutton 3s infinite linear alternate;
+  -webkit-animation: anmibutton 3s infinite linear alternate;
+  display: none;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+@media (max-width: 767px) {
+  .test-speed .container .button-again {
+    width: 100%;
+  }
+}
+.test-speed .container .button-again:hover {
+  background-color: #04544c;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: bold;
+  color: #b1e7ee;
+}
+.control .time {
+  margin-left: 200px;
+}
+.control .score {
+  margin-right: 220px;
+}
+@media (max-width: 1000px) {
+  .control {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .control .time {
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .control .score {
+    display: block;
+    margin-right: 0;
+  }
+}
+@media (max-width: 300px) {
+  .control {
+    font-size: 20px;
+  }
+}
+.finish {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+.finish .win {
+  color: #009688;
+}
+.finish .lose {
+  color: red;
+}
+@media (max-width: 300px) {
+  .finish {
+    font-size: 30px;
+  }
+}
+/* end test-speed */
+/* start animation  */
+@keyframes anmibutton {
+  from {
+    background-color: #009688;
+  }
+  to {
+    background-color: #04544c;
+  }
+}
+
+/* end animation */
